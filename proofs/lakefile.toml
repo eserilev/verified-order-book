@@ -1,0 +1,11 @@
+name = "proofs"
+defaultTargets = ["BookCore"]
+# Reuse Aeneas's already-built Mathlib instead of fetching a second copy.
+packagesDir = ".aeneas/.lake/packages"
+
+[[require]]
+name = "aeneas"
+path = ".aeneas"
+
+[[lean_lib]]
+name = "BookCore"
